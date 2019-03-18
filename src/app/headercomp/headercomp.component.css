@@ -1,0 +1,25 @@
+.input-group {
+    float: right;
+}
+
+.header{
+    height:10%;
+    top:0;
+    position: fixed;
+    width:100%;
+    background: black;
+
+}
+h5{
+    color:wheat;
+}
+a{
+    font-size: 15px;
+    margin-left: 20px;
+    color:white;
+}
+img{
+    width:100px;
+    height:50px;
+    margin-left: 10px;
+}
