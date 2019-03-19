@@ -1,5 +1,13 @@
-<div class="card" *ngFor = "let item of jsonobj">
-    <img src="{{item.ProductImg}}" alt="Avatar" style="width:100%">
-    <p>{{item.ProductName}}</p>
-    <p>{{item.Price}}</p>
+<div [hidden] = "hideElement" class = "col-sm-9">
+<div class = "row">
+<div *ngFor = "let item of obj" class = "col-sm-6 col-sm-4">
+  <div class = "img-thumbnail">
+    <img height = "250" src="{{item.ProductImg}}" alt="Avatar">
+    <p><strong>{{item.ProductName}}</strong></p>
+    <p><strong>{{item.Price}}</strong></p>
+    <a routerLink = "bookcomp" class="btn btn-primary" role="button"
+    routerLinkActive="active">Buy</a>
   </div>
+</div>
+</div>
+</div>

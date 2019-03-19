@@ -1,39 +1,43 @@
-<div>
+<div class ="col-sm-3">
   <hr>
-<div class = "dropdown">
-  <button (click) = "func1()">+Category</button>
-  <div id = "drop1" class = "dropdown-content">
+  <h4>Collection</h4>
+  <div class="dropdown">
+    <a (click)="func1()">+Category</a>
+  </div>
+  <div id="drop1" class="dropdown-content">
     <ul>
-      <li><button class = "category" (click) = "filter('Category','Dress')">Dress</button></li>
-      <li><button class = "category" (click) = "filter('Category','Kurta')">Kurta</button></li>
-      <li><button class = "category" (click) = "filter('Category','Pyjama')">Pyjama</button></li>
-      <li><button class = "category" (click) = "filter('Category','Sari')">Sari</button></li>
-      <li><button class = "category" (click) = "filter('Category','Top')">Top</button></li>
+      <li><a class="category" (click)="filter('Category','Dress')">Dress</a></li>
+      <li><a class="category" (click)="filter('Category','Kurta')">Kurta</a></li>
+      <li><a class="category" (click)="filter('Category','Pyjama')">Pyjama</a></li>
+      <li><a class="category" (click)="filter('Category','Sari')">Sari</a></li>
+      <li><a class="category" (click)="filter('Category','Top')">Top</a></li>
     </ul>
+
   </div>
-</div>
-<hr>
-<div class = "dropdown">
-    <button (click) = "func2()">+Size</button>
-    <div id = "drop2" class = "dropdown-content">
-      <ul>
-        <li><button class = "size" (click) = "filter('Size','S')">S</button></li>
-        <li><button class = "size" (click) = "filter('Size','M')">M</button></li>
-        <li><button class = "size" (click) = "filter('Size','L')">L</button></li>
-        <li><button class = "size" (click) = "filter('Size','XL')">XL</button></li>
-      </ul>
-    </div>
+  <hr>
+  <div class="dropdown">
+    <a (click)="func2()">+Size</a>
   </div>
-<hr>
-  <div class = "dropdown">
-      <button (click) = "func3()">+Color</button>
-      <div id = "drop3" class = "dropdown-content">
-        <ul>
-          <li><button class = "color" (click) = "filter('color','Red')">Red</button></li>
-          <li><button class = "color" (click) = "filter('color','Blue')">Blue</button></li>
-          <li><button class = "color" (click) = "filter('color','White')">White</button></li>
-          <li><button class = "color" (click) = "filter('color','Pink')">Pink</button></li>
-        </ul>
-      </div>
-    </div>
+  <div id="drop2" class="dropdown-content">
+    <ul>
+      <li><a class="size" (click)="filter('Size','S')">S</a></li>
+      <li><a class="size" (click)="filter('Size','M')">M</a></li>
+      <li><a class="size" (click)="filter('Size','L')">L</a></li>
+      <li><a class="size" (click)="filter('Size','XL')">XL</a></li>
+    </ul>
+
+  </div>
+  <hr>
+  <div class="dropdown">
+    <a (click)="func3()">+Color</a>
+  </div>
+  <div id="drop3" class="dropdown-content">
+    <ul>
+      <li><a class="color" (click)="filter('color','Red')">Red</a></li>
+      <li><a class="color" (click)="filter('color','Blue')">Blue</a></li>
+      <li><a class="color" (click)="filter('color','White')">White</a></li>
+      <li><a class="color" (click)="filter('color','Pink')">Pink</a></li>
+    </ul>
+
+  </div>
 </div>

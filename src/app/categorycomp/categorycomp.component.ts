@@ -17,8 +17,14 @@ export class CategorycompComponent implements OnInit {
   ngOnInit() {
 
   }
+
   func1(){
-    document.getElementById("drop1");
+    var x = document.getElementById("drop1");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
   func2(){
     document.getElementById("drop2");

@@ -102,7 +102,6 @@ export class MyserviceService {
       if ((filtervalue.Category ? data.Category == filtervalue.Category : true) && (filtervalue.Size ? data.Size == filtervalue.Size : true) && (filtervalue.color ? data.color == filtervalue.color : true)) {
         return true;
       }
-      return false;
 
     });
     console.log(this.data);
